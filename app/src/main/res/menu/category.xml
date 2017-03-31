@@ -6,5 +6,8 @@
         android:orderInCategory="100"
         android:title="@string/action_settings"
         app:showAsAction="never" />
-
+    <item android:id="@+id/menu_share"
+        android:icon="@drawable/like"
+        app:showAsAction="ifRoom"
+        android:title="@string/app_name" />
 </menu>

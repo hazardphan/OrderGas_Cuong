@@ -1,10 +1,12 @@
 package android.hazardphan.ordergas;
 
+import java.io.Serializable;
+
 /**
  * Created by CuongPhan on 3/29/2017.
  */
 
-public class Item_GasHome {
+public class Item_GasHome implements Serializable{
     private String tencuahang;
     private String loaigas;
     private String motagia ;
@@ -12,7 +14,7 @@ public class Item_GasHome {
     private String tenchucuahang;
     private String diadiem;
     private String latlng;
-    private int anh;
+    private String anh;
 
     public Item_GasHome() {
     }
@@ -24,16 +26,14 @@ public class Item_GasHome {
         this.diadiem = diadiem;
     }
 
-    public Item_GasHome(String tencuahang, String loaigas, String motagia, String sodienthoai, String tenchucuahang, String diadiem, String latlng, int anh) {
+    public Item_GasHome(String tencuahang, String motagia, String sodienthoai, String diadiem, String anh) {
         this.tencuahang = tencuahang;
-        this.loaigas = loaigas;
         this.motagia = motagia;
         this.sodienthoai = sodienthoai;
-        this.tenchucuahang = tenchucuahang;
         this.diadiem = diadiem;
-        this.latlng = latlng;
         this.anh = anh;
     }
+
 
     public String getTencuahang() {
         return tencuahang;
@@ -91,11 +91,11 @@ public class Item_GasHome {
         this.latlng = latlng;
     }
 
-    public int getAnh() {
+    public String getAnh() {
         return anh;
     }
 
-    public void setAnh(int anh) {
+    public void setAnh(String anh) {
         this.anh = anh;
     }
 }

@@ -6,10 +6,10 @@
     android:background="#b6cbe9">
 
         <LinearLayout
-            android:paddingBottom="3dp"
-            android:paddingLeft="6dp"
-            android:paddingRight="6dp"
-            android:paddingTop="3dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="4dp"
             android:background="?android:attr/selectableItemBackground"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -36,7 +36,7 @@
                     android:padding="10dp"
                     android:paddingLeft="10dp"
                     android:text="CUA HANG GAS SO 1"
-                    android:textColor="#294270"
+                    android:textColor="#2f5fb7"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -53,11 +53,12 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:textStyle="bold"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="7dp"
+                    android:padding="5dp"
                     android:text="Cừa hàng mua bán gas giá rẻ"
-                    android:textSize="14sp" />
+                    android:textSize="15sp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -65,23 +66,27 @@
                     android:orientation="horizontal">
 
                     <TextView
+                        android:textStyle="bold"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:padding="5dp"
+                        android:padding="3dp"
                         android:singleLine="true"
                         android:text="Địa chỉ"
-                        android:textSize="14sp" />
+                        android:textSize="15sp" />
 
                     <TextView
+                        android:textStyle="bold"
                         android:id="@+id/txtDiaChiHome"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="4"
-                        android:padding="5dp"
-                        android:singleLine="true"
+                        android:padding="3dp"
                         android:text="SN 43 Phố Nhổn Từ Liêm Hà Nội"
-                        android:textSize="14sp" />
+                        android:maxLines="3"
+                        android:lines="3"
+
+                        android:textSize="15sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -90,23 +95,25 @@
                     android:orientation="horizontal">
 
                     <TextView
+                        android:textStyle="bold"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:padding="5dp"
+                        android:padding="3dp"
                         android:singleLine="true"
                         android:text="Giá tiền"
-                        android:textSize="14sp" />
+                        android:textSize="15sp" />
 
                     <TextView
+                        android:textStyle="bold"
                         android:id="@+id/txtGiaTienHome"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="4"
-                        android:padding="5dp"
+                        android:padding="3dp"
                         android:singleLine="true"
                         android:text="SN 43 Phố Nhổn Từ Liêm Hà Nội"
-                        android:textSize="14sp" />
+                        android:textSize="15sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -115,23 +122,25 @@
                     android:orientation="horizontal">
 
                     <TextView
+                        android:textStyle="bold"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:padding="5dp"
+                        android:padding="3dp"
                         android:singleLine="true"
                         android:text="SDT"
-                        android:textSize="14sp" />
+                        android:textSize="15sp" />
 
                     <TextView
+                        android:textStyle="bold"
                         android:id="@+id/txtSDTHome"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="4"
-                        android:padding="5dp"
+                        android:padding="3dp"
                         android:singleLine="true"
                         android:text="0965675375"
-                        android:textSize="13sp" />
+                        android:textSize="15sp" />
                 </LinearLayout>
 
                 <ImageView
@@ -150,19 +159,24 @@
                 android:background="#575760"></View>
 
             <LinearLayout
+
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#d4e0f1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:padding="10dp">
+
                 <LinearLayout
-                    android:id="@+id/lnGoi"
+
+                    android:id="@+id/lnCall"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1">
 
                     <ImageView
-                        android:layout_width="36dp"
-                        android:layout_height="36dp"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
                         android:layout_gravity="center"
                         android:layout_marginLeft="13dp"
                         android:src="@drawable/icon_dienthoai" />
@@ -170,28 +184,28 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
                         android:gravity="center_vertical"
                         android:text="Gọi"
-                        android:layout_marginLeft="5dp"
-                        android:textStyle="bold"
-                        android:textSize="15sp" />
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/lnBinhLuan"
+
+                    android:id="@+id/lnComment"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1">
 
                     <ImageView
-                        android:layout_marginLeft="5dp"
-                        android:layout_width="36dp"
-                        android:layout_height="36dp"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
                         android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
                         android:src="@drawable/icon_comment" />
 
                     <TextView
-                        android:textStyle="bold"
                         android:id="@+id/textView2"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -199,32 +213,34 @@
                         android:gravity="center_vertical"
                         android:singleLine="true"
                         android:text="Bình luận"
-                        android:textSize="15sp" />
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
                 </LinearLayout>
 
                 <LinearLayout
 
-                    android:id="@+id/lnThich"
+                    android:clickable="false"
+                    android:id="@+id/lnLike"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.9">
 
                     <ImageView
-                        android:layout_width="36dp"
-                        android:layout_height="36dp"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
                         android:layout_gravity="center"
                         android:layout_marginLeft="12dp"
                         android:src="@drawable/icon_like" />
 
                     <TextView
-                        android:textStyle="bold"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_marginLeft="5dp"
                         android:gravity="center_vertical"
                         android:singleLine="true"
                         android:text="Thích"
-                        android:textSize="15sp" />
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
                 </LinearLayout>
             </LinearLayout>
 
