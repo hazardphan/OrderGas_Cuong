@@ -7,6 +7,7 @@ import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.widget.RecyclerView;
+import android.telephony.SmsManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -87,7 +88,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             txtSDT= (TextView) v.findViewById(R.id.txtSDTHome);
             imgCuaHang= (ImageView) v.findViewById(R.id.imgHome);
             lnCall = (LinearLayout) v.findViewById(R.id.lnCall);
-            lnComment = (LinearLayout) v.findViewById(R.id.lnCall);
+            lnComment = (LinearLayout) v.findViewById(R.id.lnComment);
             lnLike = (LinearLayout) v.findViewById(R.id.lnLike);
 
             lnCall.setOnClickListener(new View.OnClickListener() {
@@ -105,9 +106,19 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
                 }
             });
+            lnComment.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    sendSMS("0979207899", "Mã số xác nhận cửa hàng của bạn trên app Order Gas là : 0000");
+                }
+            });
+
         }
 
-
+        private void sendSMS(String phoneNumber, String message) {
+            SmsManager sms = SmsManager.getDefault();
+            sms.sendTextMessage(phoneNumber, null, message, null, null);
+        }
         @Override
         public void onClick(View v) {
             clickListener.onItemClick(getAdapterPosition(), v);
@@ -139,4 +150,5 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
         void onItemLongClick(int position, View v);
     }
+
 }

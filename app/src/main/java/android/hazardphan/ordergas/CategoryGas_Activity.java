@@ -13,8 +13,8 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
 import com.facebook.drawee.backends.pipeline.Fresco;
 import com.facebook.drawee.view.SimpleDraweeView;
 
@@ -33,7 +33,7 @@ public class CategoryGas_Activity extends AppCompatActivity implements AppBarLay
     private FrameLayout framelayoutTitle;
     private LinearLayout linearlayoutTitle;
     private Toolbar toolbar;
-    private TextView textviewTitle;
+    private TextView textviewTitle,txtTenCuaHangCategory,txtSDTCategory;
     private SimpleDraweeView avatar;
 
     Item_GasHome item ;
@@ -52,6 +52,8 @@ public class CategoryGas_Activity extends AppCompatActivity implements AppBarLay
         toolbar = (Toolbar)findViewById( R.id.toolbar1 );
         textviewTitle = (TextView)findViewById( R.id.textview_title );
         avatar = (SimpleDraweeView)findViewById(R.id.avatar);
+        txtTenCuaHangCategory= (TextView) findViewById(R.id.txtTenCuaHangCategory);
+        txtSDTCategory = (TextView) findViewById(R.id.txtSDTCategory);
 
     }
 
@@ -70,10 +72,16 @@ public class CategoryGas_Activity extends AppCompatActivity implements AppBarLay
 
         //set avatar and cover
         avatar.setImageURI(imageUri);
-        coverImage.setImageResource(R.drawable.cover);
+
 
         item = (Item_GasHome) getIntent().getExtras().getSerializable("detail");
-        Toast.makeText(CategoryGas_Activity.this, item.getSodienthoai(), Toast.LENGTH_SHORT).show();
+      //  Toast.makeText(CategoryGas_Activity.this, item.getSodienthoai(), Toast.LENGTH_SHORT).show();
+        txtTenCuaHangCategory.setText(item.getTencuahang());
+        txtSDTCategory.setText(item.getSodienthoai());
+        Glide.with(this)
+                .load(item.getAnh())
+                .into(coverImage);
+
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

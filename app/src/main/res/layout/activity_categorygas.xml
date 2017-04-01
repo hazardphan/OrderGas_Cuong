@@ -37,7 +37,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:layout_gravity="bottom|center_horizontal"
-                    android:background="@color/colorPrimary"
+                    android:background="#5f8bbe"
                     android:orientation="vertical"
                     app:layout_collapseMode="parallax"
                     app:layout_collapseParallaxMultiplier="0.3">
@@ -50,6 +50,7 @@
                         android:orientation="vertical">
 
                         <TextView
+                            android:id="@+id/txtTenCuaHangCategory"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
@@ -59,6 +60,7 @@
                             android:textSize="25sp" />
 
                         <TextView
+                            android:id="@+id/txtSDTCategory"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
@@ -99,7 +101,7 @@
             android:id="@+id/toolbar1"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@color/colorPrimary"
+            android:background="#5f8bbe"
             app:layout_anchor="@id/framelayout_title"
             app:theme="@style/ThemeOverlay.AppCompat.Dark"
             app:title="">
