@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:fresco="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -76,24 +76,267 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scrollbars="none"
+            
             android:layout_marginTop="@dimen/activity_horizontal_margin"
             app:behavior_overlapTop="30dp"
             app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-            <android.support.v7.widget.CardView
-                android:layout_width="wrap_content"
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:paddingBottom="3dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="6dp"
+                android:orientation="vertical"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                app:cardElevation="8dp"
-                app:contentPadding="16dp">
+                android:background="#e6e4e4">
 
-                <TextView
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="@drawable/selector_recycleriew"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:lineSpacingExtra="8dp"
-                    android:text="sadsadda"
-                    android:textSize="18sp" />
-            </android.support.v7.widget.CardView>
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#fff"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:paddingLeft="10dp"
+                            android:src="@drawable/shopgas" />
+
+                        <TextView
+                            android:id="@+id/txtTenCuaHangHome"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:paddingLeft="10dp"
+                            android:text="CUA HANG GAS SO 1"
+                            android:textColor="#2f5fb7"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#575760"></View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#fff"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="Cừa hàng mua bán gas giá rẻ"
+                            android:textSize="15sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:textStyle="bold"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:padding="3dp"
+                                android:singleLine="true"
+                                android:text="Địa chỉ"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:textStyle="bold"
+                                android:id="@+id/txtDiaChiHome"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="4"
+                                android:padding="3dp"
+                                android:text="SN 43 Phố Nhổn Từ Liêm Hà Nội"
+                                android:maxLines="3"
+                                android:lines="3"
+
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:textStyle="bold"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:padding="3dp"
+                                android:singleLine="true"
+                                android:text="Giá tiền"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:textStyle="bold"
+                                android:id="@+id/txtGiaTienHome"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="4"
+                                android:padding="3dp"
+                                android:singleLine="true"
+                                android:text="SN 43 Phố Nhổn Từ Liêm Hà Nội"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:textStyle="bold"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:padding="3dp"
+                                android:singleLine="true"
+                                android:text="SDT"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:textStyle="bold"
+                                android:id="@+id/txtSDTHome"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="4"
+                                android:padding="3dp"
+                                android:singleLine="true"
+                                android:text="0965675375"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <ImageView
+
+                            android:id="@+id/imgHome"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+
+                            android:background="@drawable/cuahang" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_marginTop="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#575760"></View>
+
+                    <LinearLayout
+
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#d4e0f1"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <LinearLayout
+
+                            android:id="@+id/lnCall"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="13dp"
+                                android:src="@drawable/icon_dienthoai" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+                                android:gravity="center_vertical"
+                                android:text="Gọi"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+
+                            android:id="@+id/lnComment"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:src="@drawable/icon_comment" />
+
+                            <TextView
+                                android:id="@+id/textView2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+                                android:gravity="center_vertical"
+                                android:singleLine="true"
+                                android:text="Bình luận"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+
+                            android:clickable="false"
+                            android:id="@+id/lnLike"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.9">
+
+                            <ImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="12dp"
+                                android:src="@drawable/icon_like" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+                                android:gravity="center_vertical"
+                                android:singleLine="true"
+                                android:text="Thích"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:id="@+id/map"
+                    android:name="com.google.android.gms.maps.MapFragment" />
+            </LinearLayout>
+
 
 
         </android.support.v4.widget.NestedScrollView>
@@ -135,4 +378,4 @@
             app:layout_behavior="android.hazardphan.ordergas.ImageBehavior"
             fresco:roundAsCircle="true" />
     </android.support.design.widget.CoordinatorLayout>
-</LinearLayout>
+</RelativeLayout>

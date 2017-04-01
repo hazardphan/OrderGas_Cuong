@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
+    android:paddingBottom="3dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="6dp"
     android:layout_height="wrap_content"
-    android:background="#b6cbe9">
+    android:background="#e6e4e4">
 
         <LinearLayout
-            android:paddingBottom="5dp"
-            android:paddingLeft="8dp"
-            android:paddingRight="8dp"
-            android:paddingTop="4dp"
-            android:background="?android:attr/selectableItemBackground"
+            android:padding="5dp"
+            android:background="@drawable/selector_recycleriew"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -246,4 +247,4 @@
 
         </LinearLayout>
 
-</RelativeLayout>
+</LinearLayout>
