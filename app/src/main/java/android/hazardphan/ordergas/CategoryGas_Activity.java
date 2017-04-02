@@ -44,8 +44,9 @@ public class CategoryGas_Activity extends AppCompatActivity implements AppBarLay
     private FrameLayout framelayoutTitle;
     private LinearLayout linearlayoutTitle;
     private Toolbar toolbar;
-    private TextView textviewTitle,txtTenCuaHangCategory,txtSDTCategory;
+    private TextView textviewTitle,txtTenCuaHangCategory,txtSDTCategory,txttoolbarl;
     private SimpleDraweeView avatar;
+
 
     Item_GasHome item ;
 
@@ -62,7 +63,7 @@ public class CategoryGas_Activity extends AppCompatActivity implements AppBarLay
         linearlayoutTitle = (LinearLayout)findViewById( R.id.linearlayout_title );
         toolbar = (Toolbar)findViewById( R.id.toolbar1 );
         textviewTitle = (TextView)findViewById( R.id.textview_title );
-        avatar = (SimpleDraweeView)findViewById(R.id.avatar);
+
         txtTenCuaHangCategory= (TextView) findViewById(R.id.txtTenCuaHangCategory);
         txtSDTCategory = (TextView) findViewById(R.id.txtSDTCategory);
 
@@ -82,13 +83,13 @@ public class CategoryGas_Activity extends AppCompatActivity implements AppBarLay
         startAlphaAnimation(textviewTitle, 0, View.INVISIBLE);
 
         //set avatar and cover
-        avatar.setImageURI(imageUri);
 
 
         item = (Item_GasHome) getIntent().getExtras().getSerializable("detail");
       //  Toast.makeText(CategoryGas_Activity.this, item.getSodienthoai(), Toast.LENGTH_SHORT).show();
         txtTenCuaHangCategory.setText(item.getTencuahang());
         txtSDTCategory.setText(item.getSodienthoai());
+        textviewTitle.setText(item.getTencuahang());
         Glide.with(this)
                 .load(item.getAnh())
                 .into(coverImage);

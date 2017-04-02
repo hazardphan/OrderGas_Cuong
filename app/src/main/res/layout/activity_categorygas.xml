@@ -80,7 +80,7 @@
             android:layout_marginTop="@dimen/activity_horizontal_margin"
             app:behavior_overlapTop="30dp"
             app:layout_behavior="@string/appbar_scrolling_view_behavior">
-
+// item layoutcategory
             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:card_view="http://schemas.android.com/apk/res-auto"
                 android:layout_width="match_parent"
@@ -114,7 +114,7 @@
                             android:src="@drawable/shopgas" />
 
                         <TextView
-                            android:id="@+id/txtTenCuaHangHome"
+                            android:id="@+id/txtTenCuaHangC"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="10dp"
@@ -137,6 +137,7 @@
                         android:orientation="vertical">
 
                         <TextView
+                            android:textColor="#000000"
                             android:textStyle="bold"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -150,6 +151,7 @@
                             android:orientation="horizontal">
 
                             <TextView
+                                android:textColor="#000000"
                                 android:textStyle="bold"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
@@ -160,8 +162,8 @@
                                 android:textSize="15sp" />
 
                             <TextView
-                                android:textStyle="bold"
-                                android:id="@+id/txtDiaChiHome"
+                                android:textColor="#000000"
+                                android:id="@+id/txtDiaChiC"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="4"
@@ -172,13 +174,40 @@
 
                                 android:textSize="15sp" />
                         </LinearLayout>
-
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
 
                             <TextView
+                                android:textColor="#000000"
+                                android:textStyle="bold"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:padding="3dp"
+                                android:singleLine="true"
+                                android:text="Loại Gas"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:textColor="#000000"
+                                android:id="@+id/txtLoaiGasC"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="4"
+                                android:padding="3dp"
+                                android:singleLine="true"
+                                android:text="Gas HP"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:textColor="#000000"
                                 android:textStyle="bold"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
@@ -189,8 +218,8 @@
                                 android:textSize="15sp" />
 
                             <TextView
-                                android:textStyle="bold"
-                                android:id="@+id/txtGiaTienHome"
+                                android:textColor="#000000"
+                                android:id="@+id/txtGiaTienC"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="4"
@@ -199,13 +228,40 @@
                                 android:text="SN 43 Phố Nhổn Từ Liêm Hà Nội"
                                 android:textSize="15sp" />
                         </LinearLayout>
-
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
 
                             <TextView
+                                android:textColor="#000000"
+                                android:textStyle="bold"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:padding="3dp"
+                                android:singleLine="true"
+                                android:text="Chủ CH "
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:textColor="#000000"
+                                android:id="@+id/txtChuCuahangC"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="4"
+                                android:padding="4dp"
+                                android:singleLine="true"
+                                android:text="Tran Van Anh"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:textColor="#000000"
                                 android:textStyle="bold"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
@@ -216,8 +272,8 @@
                                 android:textSize="15sp" />
 
                             <TextView
-                                android:textStyle="bold"
-                                android:id="@+id/txtSDTHome"
+                                android:textColor="#000000"
+                                android:id="@+id/txtSDTC"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="4"
@@ -227,13 +283,7 @@
                                 android:textSize="15sp" />
                         </LinearLayout>
 
-                        <ImageView
 
-                            android:id="@+id/imgHome"
-                            android:layout_width="match_parent"
-                            android:layout_height="200dp"
-
-                            android:background="@drawable/cuahang" />
                     </LinearLayout>
 
                     <View
